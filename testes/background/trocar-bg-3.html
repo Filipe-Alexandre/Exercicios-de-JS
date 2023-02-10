@@ -20,6 +20,7 @@
         h1 {
             text-align: center;
             color: white;
+            text-shadow: 1px 1px 1px black;
 
             margin: 50px 0px;
         }
@@ -61,13 +62,13 @@
         [botão Color]
     </h1>
     <abbr title="Para mudar o fundo selecionar a cor e apertar [ENTER 2X]">?</abbr>
-    <input type="color" name="cor" id="cor" value="#0000ff" onkeypress="teste()">
+    <input type="color" name="cor" id="cor" value="#ffffff" onkeypress="teste()">
+    <script>
+        var cor = document.querySelector("#cor")
+        var mens = document.querySelector('p')
+        function teste() {
+            document.body.style.backgroundColor = cor.value
+        }
+    </script>
 </body>
-<script>
-    var cor = document.querySelector("#cor")
-    var mens = document.querySelector('p')
-    function teste() {
-        document.body.style.backgroundColor = cor.value
-    }
-</script>
 </html>

@@ -1,7 +1,6 @@
 function verificar() {
     var res = document.querySelector('#res')
     var ent = document.getElementsByName('ent')
-    var foto = document.querySelector('#foto')
     
         if (ent[0].checked) {
             res.innerHTML = '<a href="https://youtu.be/xU3AB-L2yHQ" target="_blank"><img src="img-filme.png" alt="Filmes"></a>'
